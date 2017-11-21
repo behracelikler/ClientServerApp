@@ -1,0 +1,14 @@
+CREATE TABLE [dbo].[TABLE_LOG](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+ 	[DATASSENDER] [nvarchar](300) NULL,
+ 	[DATASEND] [nvarchar](300) NULL, 
+ 	[DATARECEIVED] [nvarchar](300) NULL,  
+	[BACKSENDMESSAGE][nvarchar](300) NULL,
+ 	[TIME] [datetime] NULL,
+ 	[IP] [nvarchar](20) NULL,
+	[PORT] [int]  NULL,
+        [ERRORCONTENT] TEXT NULL,
+  CONSTRAINT [PK_TABLE_LOG] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+) ) ON [PRIMARY]
